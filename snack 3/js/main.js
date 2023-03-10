@@ -17,7 +17,7 @@ function generatorNumber (array) {
 
 function generatorNew (array, a, b) {
 
-    array.foreach (number => {
+    array.filter (number => {
         if((number > a) && (number < b)){
             return newNumberList.push(number)
         }
