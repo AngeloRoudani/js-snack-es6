@@ -38,16 +38,15 @@ function randomNumberGen () {
     return Math.floor(Math.random() * 30) + 1;
 } 
 
+const teamsPoint =[...teams];
 
-teams.forEach(element => {
+teamsPoint.forEach(element => {
     element.punti = randomNumberGen ();
     element.falli = randomNumberGen ();
+    const {squadra, falli} = element;
+    console.log(squadra, falli);
 }
 );
 
-console.log(squadra, falli);
 
-const {squadra, falli} = teams;
-
-console.log(squadra, falli);
 
