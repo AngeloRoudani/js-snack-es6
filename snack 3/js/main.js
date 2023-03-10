@@ -1,7 +1,11 @@
 const numberList = [];
+const newNumberList = [];
 
 generatorNumber(numberList);
 console.log(numberList);
+
+generatorNew(numberList, 25, 62);
+console.log(newNumberList);
 
 function generatorNumber (array) {
     
@@ -10,18 +14,14 @@ function generatorNumber (array) {
     }
     return array;
 }
-const newNumberList =[...numberList];
 
 function generatorNew (array, a, b) {
 
     array.foreach (number => {
         if((number > a) && (number < b)){
-            return true;
-        } else {
-            return false;
+            return newNumberList.push(number)
         }
-    })
+    }
+    );
 }
 
-generatorNew(newNumberList, 25, 62);
-console.log(newNumberList);
