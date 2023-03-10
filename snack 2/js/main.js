@@ -32,13 +32,12 @@ const teams = [
     }
 ];
 
+
+
 function randomNumberGen () {
     return Math.floor(Math.random() * 30) + 1;
 } 
 
-let number = randomNumberGen ();
-
-console.log(number);
 
 teams.forEach(element => {
     element.punti = randomNumberGen ();
@@ -46,4 +45,9 @@ teams.forEach(element => {
 }
 );
 
-console.log({squadra, falli} = teams);
+console.log(squadra, falli);
+
+const {squadra, falli} = teams;
+
+console.log(squadra, falli);
+
