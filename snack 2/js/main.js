@@ -7,28 +7,28 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 const teams = [
     {
         squadra: 'milan',
-        punti: 0,
-        falli: 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         squadra: 'inter',
-        punti: 0,
-        falli: 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         squadra: 'juventus',
-        punti: 0,
-        falli: 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         squadra: 'roma',
-        punti: 0,
-        falli: 0
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
         squadra: 'atalanta',
-        punti: 0,
-        falli: 0
+        puntiFatti: 0,
+        falliSubiti: 0
     }
 ];
 
@@ -41,10 +41,10 @@ function randomNumberGen () {
 const teamsPoint =[...teams];
 
 teamsPoint.forEach(element => {
-    element.punti = randomNumberGen ();
-    element.falli = randomNumberGen ();
-    const {squadra, falli} = element;
-    console.log(squadra, falli);
+    element.puntiFatti = randomNumberGen ();
+    element.falliSubiti = randomNumberGen ();
+    const {squadra, falliSubiti} = element;
+    console.log(`Squadra: ${squadra}, falli subiti: ${falliSubiti}`);
 }
 );
 
